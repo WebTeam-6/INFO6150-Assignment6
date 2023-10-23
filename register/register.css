@@ -1,0 +1,62 @@
+.iti {
+  display: block;
+  width: 100%;
+}
+.container {
+  padding: 0;
+}
+.profile,
+.cart {
+  margin-left: 15px;
+}
+.progress {
+  display: none;
+}
+
+i.fas.fa-headset {
+    margin-right: 10px;
+    font-size: 35px;
+}
+
+footer h1 {
+  font-size: 18px;
+}
+
+.input-group{
+    width: 75%;
+}
+
+.logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 40px;
+    color: #3498db;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+footer span,p{
+    font-size: 19px;
+}
+
+@media (max-width: 767px) {
+
+    footer{
+        text-align: center;
+    }
+
+    .col-sm-12 {
+        align-items: center;
+        border-bottom: 1px solid #000;
+    }
+
+    .d-flex{
+        justify-content: center;
+    }
+    .input-group{
+        justify-content: center;
+    }
+}
