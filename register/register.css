@@ -29,17 +29,39 @@ footer h1 {
 .logo {
     font-family: 'Arial', sans-serif;
     font-size: 40px;
-    color: #3498db;
-    letter-spacing: 4px;
+    color: #541212;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 footer h3{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 footer span,p{
     font-size: 19px;
+}
+
+#insta {
+  color: transparent;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 28px;
 }
 
 @media (max-width: 767px) {

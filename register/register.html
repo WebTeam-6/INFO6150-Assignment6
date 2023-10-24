@@ -28,7 +28,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <div class="logo-container">
-            <h1 class="logo">Shlipkala</h1>
+            <h1 class="logo">शिल्पकला</h1>
         </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,6 +66,134 @@
         </div>
       </div>
     </nav>
+    <div class="container mt-lg-5">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="../images/login.png" alt="SignUp" class="img-fluid" style="height: 350px;"/>
+        </div>
+
+        <div class="col-md-7">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                required
+              />
+              <div id="feedback-name"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" required />
+              <div id="feedback-lastname"></div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label class="form-label d-block">Sex</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" id="male" type="radio" name="sex" />
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" id="female" type="radio" name="sex" />
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" id="other" type="radio" name="sex" />
+                    <label class="form-check-label" for="other">Other</label>
+                </div>
+            </div>
+            <div id="feedback-sex"></div>
+            </div>
+            <div class = "col-md-6"> 
+              <label for="dob" class="form-label">Date Of Birth</label>   
+                 <input type = "date" name = "date" class="form-control">   
+                 <div id="feedback-dob"></div>
+            </div> 
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+              <div id="feedback-email"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" required />
+              <div id="feedback-phone"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                required
+              />
+
+              <div class="progress mt-2" id="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 0.3rem;">
+                <div class="progress-bar" id="progress-bar"></div>
+              </div>
+
+              <p id="passwordStrength" class="m-0 p-0"></p>
+
+              <div id="feedback-password"></div>
+            </div>
+            <div class="col-md-6">
+              <label for="confirmPassowrd" class="form-label"
+                >Confirm password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassowrd"
+                required
+              />
+              <div id="feedback"></div>
+            </div>
+
+            <div class="col-12 text-center">
+              <button class="btn btn-primary" type="submit">Sign Up</button>
+            </div>
+            <p class="text-center">Already have an account? <a href="../login/login.html">Login</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-light text-dark">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-5 col-sm-12">
+                <div class="logo-container">
+                  <h1 class="logo">शिल्पकला</h1>
+              </div>
+                  <div class="d-flex">
+                    <i class="fas fa-headset"></i>
+                    <div>
+                        <span>Customer Support</span>
+                        <p>Call: (774) 486-8766</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                  <h3>Sign up for newsletters</h3>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Your email">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" style="margin-left: 5px;">Subscribe</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <h3>Follow Us</h3>
+                <a href="#" class="btn social-icon"> <i class='fab fa-instagram' id="insta"></i></a>
+                <a href="#" class="btn social-icon"><i class="fab fa-facebook-f" style="font-size:28px;color: blue;"></i></a>
+                <a href="#" class="btn social-icon"><i class="fab fa-twitter" style="font-size:28px;color: #00acee;"></i></a>
+                <a href="#" class="btn social-icon"><i class="fab fa-linkedin" style="font-size:28px;color: blue;"></i></a>
+            </div>
+          </div>
+      </div>
+    </footer>
   </body>
   <script>
     const phoneInputField = document.querySelector("#phone");
