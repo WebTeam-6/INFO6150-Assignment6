@@ -34,7 +34,7 @@ p {
   font-size: 19px;
 }
 
-.fab .fa-instagram {
+#insta{
   color: transparent;
   background: radial-gradient(
     circle at 30% 107%,
