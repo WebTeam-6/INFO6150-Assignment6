@@ -22,7 +22,6 @@
     font-family: "Arial", sans-serif;
     font-size: 40px;
     color: #541212;
-    letter-spacing: 4px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
   
@@ -57,6 +56,23 @@
     font-size: 28px;
   }
 
+  .cart-details{
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart-item img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .cart-total{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+  }
+  .nav-link.active{
+    border-bottom: 4px solid #541212;
+  }
   /* carousel */
   .d-block {
     height: 700px;
