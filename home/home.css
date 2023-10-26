@@ -1,0 +1,321 @@
+
+.container {
+    padding: 0;
+  }
+  .profile,
+  .cart {
+    margin-left: 15px;
+  }
+  i.fas.fa-headset {
+    margin-right: 10px;
+    font-size: 35px;
+  }
+  
+  footer h1 {
+    font-size: 18px;
+  }
+  
+  .input-group {
+    width: 75%;
+  }
+  
+  .logo {
+    font-family: "Arial", sans-serif;
+    font-size: 40px;
+    color: #541212;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer h3 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  
+  footer span,
+  p {
+    font-size: 19px;
+  }
+  #insta {
+    color: transparent;
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    background: -webkit-radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 28px;
+  }
+
+  .cart-details{
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart-item img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .cart-total{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+  }
+  .nav-link.active{
+    border-bottom: 4px solid #541212;
+  }
+  /* carousel */
+  .d-block {
+    height: 700px;
+  }
+
+  .about-section{
+    margin: 40px 0px;
+    display: flex;
+    background-color: whitesmoke;
+  }
+
+  .about-img{
+    float: left;
+    max-width: 50%;
+    margin: 60px 0px 20px 50px;
+  }
+
+  .about-img img{
+    width: 90%;
+    height: 90%;
+    border-radius: 0.5%;
+  }
+
+  .about-text{
+    margin: 100px;
+  }
+
+  .about-text p{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: large;
+  }
+
+
+  @media (max-width: 767px) {
+    footer {
+      text-align: center;
+    }
+  
+    .col-sm-12 {
+      align-items: center;
+      border-bottom: 1px solid #000;
+    }
+  
+    .d-flex {
+      justify-content: center;
+    }
+    .input-group {
+      justify-content: center;
+    }
+    .d-block {
+      height: 500px;
+    }
+
+    .about-section{
+      margin: 40px 0px;
+      display: block;
+    }
+
+
+    .about-img{
+      float: left;
+      margin: 30px 0px 0px 30px;
+      height: 400px;
+      max-width: fit-content;
+    }
+
+    .about-img img{
+      width: 90%;
+      height: 90%;
+      border-radius: 0.5%;
+    }
+
+    .about-text{
+       margin: 10px 10px; 
+      padding: 0px 0px 20px 0px;
+    }
+  
+    .about-text p{
+      font-size: medium;
+    }
+  
+  }
+  
+
+  .cards-wrapper {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    }
+    .card img {
+    max-width: 100%;
+    max-height: 100%;
+    }
+    .card {
+    margin: 0 15px;
+    border: none;
+    border-radius: 0;
+    background-color: whitesmoke;
+    }
+
+    .cards{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;}
+  
+
+      .card {
+        height: 370px; 
+      }
+    
+
+    .carousel-control-prev {
+      left: 15px;
+    }
+    
+    .carousel-control-next {
+      right: 15px; 
+    }
+
+    .card .img-wrapper {
+      max-width: 100%;
+      height: 13em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+      max-height: 100%;
+    }
+
+    .accordion-item{
+      margin-bottom: 20px;
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .accordion-body p{
+      font-size: 16px;
+      font-style: normal;
+    }
+
+    .accordion-button:not(.collapsed){
+      background-color: whitesmoke;
+    }
+
+
+    .accordion-button{
+      font-size: 17px;
+    }
+  
+    @media (min-width: 768px) {
+    .card img {
+        height: 11em;
+    }
+    }
+
+    .card .card-body h5{
+      /* font-size: 14px; */
+      text-align: center;
+      font-weight: bold;
+      font-family:'Times New Roman', Times, serif;
+    }
+    .card .card-body p{
+      font-size: 17px;
+      text-align: center;
+      font-family:'Times New Roman', Times, serif;
+      
+    }
+
+    .card .card-body a{
+      font-size: 14px;
+      font-style: italic;
+      margin-left: 25%;
+      font-family:'Times New Roman', Times, serif;
+    }
+
+    .FAQ-section{
+      padding: 2%;
+      font-family:'Times New Roman', Times, serif;
+      font-size: 25px;
+    }
+
+    .shop-now-section{
+      padding:2%;
+    }
+
+
+  .FAQ-title {
+      font-family:'Times New Roman', Times, serif;
+      font-weight: 800;
+      font-size: 2.0rem;
+      /* color: #091f2f; */
+      /* text-transform: uppercase; */
+      text-align: center;
+      padding: 2%;
+  }
+  .accordion-section .panel-default > .panel-heading {
+      border: 0;
+      background: whitesmoke;
+      padding: 0;
+  }
+  .accordion-section .panel-default .panel-title a {
+      display: block;
+      font-style: italic;
+      font-family:'Times New Roman', Times, serif;
+      font-size: 1.2rem;
+      content: '\2212';
+      text-align: center;
+      /* border-radius: 5px; */
+      right:15px;
+      top:11px;
+      color: black;
+  }
+  .accordion-section .panel-default .panel-title a:after {
+      font-family:'Times New Roman', Times, serif;
+      font-style: italic;
+      font-size: 1.2rem;
+      /* content: "\f106"; */
+      color: black;
+      float: right;
+      margin-top: -12px;
+      content: '\2212';
+      width: 35px;
+      /* font-size: 25px; */
+      text-align: center;
+      border-radius: 5px;
+      right:15px;
+      top:11px;
+      /* color: rgb(8, 209, 209); */
+  }
+  .accordion-section .panel-default .panel-title a.collapsed:after {
+      /* content: "\f107"; */
+      content: '\002B';
+      
+  }
+  .accordion-section .panel-default .panel-body {
+      font-size: 1rem;
+      background-color: whitesmoke;
+
+  }
+
+  
+
+  
