@@ -10,5 +10,24 @@ For our website, we have used Bootstrap front-end framework. Some of the compone
 4. Card
     It is a flexible and extensible container for displaying content. Cards are often used to organize and present information, images, and various types of content in a consistent and visually appealing way. It is present in the shop section to display various categories of arts that can be sold.
 5. Carousel
+    It is a widely used component for creating image sliders or content carousels on web pages. It allows you to display a series of images or content items in a rotating or sliding manner. Its used in first section of the home page and in shop section too.
+6. Collapse
+    In Bootstrap, a "collapse" is a component that allows you to hide and show content, such as text, images, or other elements, in a collapsible manner. Its used in navbar when the screen size is smaller.
+7. Dropdown
+    It is a commonly used UI component that provides a list of options or actions that can be displayed when a user interacts with a button or a link. 
+8. NavBar
+    A Bootstrap navbar provides a consistent and responsive way to display links, navigation menus, and branding elements.
+    It is used to display the navigation bar of our website.
+9. Offcanvas
+    An offcanvas component allows you to create an off-canvas menu or sidebar that can be hidden off-screen and revealed when triggered. It is currently used to display the cart items when clicked on cart icon.
+10. Close button
+    It is used to close the Offcanvas side bar.
+11. List group
+    In Bootstrap, a "list group" is a versatile component that allows you to create a list of items or links with various styles and layouts. It is used in navbar.
+12. Scroll spy
+    It is a JavaScript plugin that automatically highlights and syncs the navigation menu links with the corresponding content sections as the user scrolls through the page. It is used in navbar.
+13. Progress for password
+    It is a bootstrap component used to show the progress for the strength of the password.
+14. 
 
 
