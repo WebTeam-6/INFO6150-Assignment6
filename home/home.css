@@ -1,3 +1,5 @@
+<<<<<<< Updated upstream
+=======
 .container {
     padding: 0;
   }
@@ -110,3 +112,124 @@
     font-style: italic;
     font-size: large;
   }
+
+  .cards-wrapper {
+    display: flex;
+    justify-content: center;
+    }
+    .card img {
+    max-width: 100%;
+    max-height: 100%;
+    }
+    .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+    background-color: whitesmoke;
+    }
+    .carousel-inner {
+    padding: 1em;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+    @media (min-width: 768px) {
+    .card img {
+        height: 11em;
+    }
+    }
+
+    .card .card-body h5{
+      /* font-size: 14px; */
+      text-align: center;
+      font-style: italic;
+      font-family:'Times New Roman', Times, serif;
+    }
+    .card .card-body p{
+      font-size: 14px;
+      text-align: center;
+      font-style: italic;
+      font-family:'Times New Roman', Times, serif;
+      
+    }
+
+    .card .card-body a{
+      font-size: 14px;
+      font-style: italic;
+      margin-left: 25%;
+      font-family:'Times New Roman', Times, serif;
+    }
+
+    .FAQ-section{
+      padding: 2%;
+      font-family:'Times New Roman', Times, serif;
+      font-style: italic;
+    }
+
+    .shop-now-section{
+      padding:2%;
+    }
+
+
+  .FAQ-title {
+      font-family:'Times New Roman', Times, serif;
+      font-style: italic;
+      font-weight: 800;
+      font-size: 1.5rem;
+      /* color: #091f2f; */
+      /* text-transform: uppercase; */
+      text-align: center;
+      padding: 2%;
+  }
+  .accordion-section .panel-default > .panel-heading {
+      border: 0;
+      background: whitesmoke;
+      padding: 0;
+  }
+  .accordion-section .panel-default .panel-title a {
+      display: block;
+      font-style: italic;
+      font-family:'Times New Roman', Times, serif;
+      font-size: 1.2rem;
+      content: '\2212';
+      text-align: center;
+      /* border-radius: 5px; */
+      right:15px;
+      top:11px;
+      color: black;
+  }
+  .accordion-section .panel-default .panel-title a:after {
+      font-family:'Times New Roman', Times, serif;
+      font-style: italic;
+      font-size: 1.2rem;
+      /* content: "\f106"; */
+      color: black;
+      float: right;
+      margin-top: -12px;
+      content: '\2212';
+      width: 35px;
+      /* font-size: 25px; */
+      text-align: center;
+      border-radius: 5px;
+      right:15px;
+      top:11px;
+      /* color: rgb(8, 209, 209); */
+  }
+  .accordion-section .panel-default .panel-title a.collapsed:after {
+      /* content: "\f107"; */
+      content: '\002B';
+      
+  }
+  .accordion-section .panel-default .panel-body {
+      font-size: 1rem;
+      background-color: whitesmoke;
+
+  }
+>>>>>>> Stashed changes
