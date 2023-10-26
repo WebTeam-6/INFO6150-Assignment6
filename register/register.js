@@ -26,7 +26,8 @@ function validate(e) {
   const id = e.target.id;
   const regExName = /^[a-zA-Z]{3,10}$/;
   const regExEmail = /([\w\.]+)@([\w\.]+)\.(\w+)/;
-  const regExPhone = /(?:([+]\d{1,4})[-.\s]?)?(?:[(](\d{1,3})[)][-.\s]?)?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,9})/;
+  //const regExPhone = /(?:([+]\d{1,4})[-.\s]?)?(?:[(](\d{1,3})[)][-.\s]?)?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,9})/;
+  const regExPhone = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
   switch(id){
     case "password":
       let feedbackPassword = document.getElementById("feedback-password");
@@ -155,6 +156,15 @@ function validate(e) {
       }
       break;
   }
+
+  if(document.getElementById("male").checked || document.getElementById("female").checked || document.getElementById("other").checked){
+    document.getElementById("female").classList.remove("is-invalid");
+    document.getElementById("male").classList.remove("is-invalid");
+    document.getElementById("other").classList.remove("is-invalid");
+    document.getElementById("feedback-sex").classList.remove("invalid-feedback");
+    document.getElementById("feedback-sex").style.display="none";
+    document.getElementById("feedback-sex").innerHTML = "";
+  }
  
 }
 
@@ -172,6 +182,36 @@ function signup(e){
 
   isSexSelected = (document.getElementById("male").checked || document.getElementById("female").checked || document.getElementById("other").checked)? true:false;
 
+  if(!isFirstNameValid){
+    showError(document.getElementById("firstName"), document.getElementById("feedback-firstname"), "First Name is invalid");
+  }
+  if(!isLastNameValid){
+    showError(document.getElementById("lastName"), document.getElementById("feedback-lastname"), "Last Name is invalid");
+  }
+  if(!isSexSelected){
+    document.getElementById("female").classList.add("is-invalid");
+    document.getElementById("male").classList.add("is-invalid");
+    document.getElementById("other").classList.add("is-invalid");
+
+    document.getElementById("feedback-sex").classList.add("invalid-feedback");
+    document.getElementById("feedback-sex").style.display="block";
+    document.getElementById("feedback-sex").innerHTML = "Please select an option";
+  }
+  if(!isDoBSelected){
+    showError(document.getElementById("dob"), document.getElementById("feedback-dob"), "Date of Birth is invalid");
+  }
+  if(!isEmailValid){
+    showError(document.getElementById("email"), document.getElementById("feedback-email"), "Email is invalid");
+  }
+  if(!isPhoneValid){
+    showError(document.getElementById("phone"), document.getElementById("feedback-phone"), "Phone number is invalid");
+  }
+  if(!isPasswordValid){
+    showError(document.getElementById("password"), document.getElementById("feedback-password"), "Password is invalid");
+  }
+  if(confirmPassword.value == "" || confirmPassword.value == null){
+    showError(confirmPassword, feedbackConfirmPassword, "Password is invalid");
+  }
 
   if(isFirstNameValid && isLastNameValid && isSexSelected && isDoBSelected && isEmailValid &&
     isPhoneValid && isPasswordValid ){
