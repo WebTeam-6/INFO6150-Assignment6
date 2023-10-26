@@ -70,9 +70,9 @@
     justify-content: space-between;
     margin: 15px;
   }
-  .active-nav-link {
-    border-bottom: 4px solid #541212; 
- }
+  .nav-link.active{
+    border-bottom: 4px solid #541212;
+  }
   /* carousel */
   .d-block {
     height: 700px;
