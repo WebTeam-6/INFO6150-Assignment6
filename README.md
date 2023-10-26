@@ -28,6 +28,19 @@ For our website, we have used Bootstrap front-end framework. Some of the compone
     It is a JavaScript plugin that automatically highlights and syncs the navigation menu links with the corresponding content sections as the user scrolls through the page. It is used in navbar.
 13. Progress for password
     It is a bootstrap component used to show the progress for the strength of the password.
-14. 
+14. Placeholders
+    It is used at cart's offcanvas to occupy space till the data is loaded.
+15. Alert
+    Its used to show basic warning message. It is used in registration validations.
+16. Tooltip
+    It is used to show the show the description of that item when hovered. Its present in navbar.
+17. Forms
+    Bootstrap forms are used in registration page and Login Page.
+18. Radio Button
+    Radio button is used to input the sex of the customer.
+19. Validations
+    is-valid and is-invalid bootstrap in-built class attributes are used to change the style of the forms.
+
+
 
 
