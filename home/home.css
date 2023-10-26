@@ -1,0 +1,112 @@
+.container {
+    padding: 0;
+  }
+  .profile,
+  .cart {
+    margin-left: 15px;
+  }
+  i.fas.fa-headset {
+    margin-right: 10px;
+    font-size: 35px;
+  }
+  
+  footer h1 {
+    font-size: 18px;
+  }
+  
+  .input-group {
+    width: 75%;
+  }
+  
+  .logo {
+    font-family: "Arial", sans-serif;
+    font-size: 40px;
+    color: #541212;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer h3 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  
+  footer span,
+  p {
+    font-size: 19px;
+  }
+  #insta {
+    color: transparent;
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    background: -webkit-radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 28px;
+  }
+  @media (max-width: 767px) {
+    footer {
+      text-align: center;
+    }
+  
+    .col-sm-12 {
+      align-items: center;
+      border-bottom: 1px solid #000;
+    }
+  
+    .d-flex {
+      justify-content: center;
+    }
+    .input-group {
+      justify-content: center;
+    }
+  }
+  
+
+  /* carousel */
+  .d-block {
+    height: 600px;
+  }
+
+  .about-section{
+    margin: 40px 0px;
+    display: flex;
+    background-color: whitesmoke;
+  }
+
+  .about-img{
+    float: left;
+    max-width: 50%;
+    margin: 20px 0px 20px 30px;
+  }
+
+  .about-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5%;
+  }
+
+  .about-text{
+    margin: 100px;
+  }
+
+  .about-text p{
+    /* margin: 40px; */
+    
+    text-align: center;
+   font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: large;
+  }
