@@ -40,16 +40,16 @@
                 <a class="nav-link "  href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link "  href="#">Shop</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link "  href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link "  href="#">FAQs</a>
+                <a class="nav-link "  href="#shop">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link "  href="#">Contact</a>
+                <a class="nav-link "  href="#faq">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="#footer">Contact</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -59,65 +59,100 @@
             <a  href="#" class="profile">
               <img src="../images/profile-picture.png" alt="" width="40" height="30" class="img-fluid">
             </a>
+            <!-- <a  href="#" class="cart">
+              <img src="../images/shopping-cart.png" alt="" width="40" height="30" class="img-fluid">
+            </a> -->
             <a href="#offcanvasExample" class="cart cart-badge relative" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
               <img src="../images/shopping-cart.png" alt="" width="40" height="30" class="img-fluid">
               <span class="badge absolute  top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
-          </a>
+            </a>
           </div>
         </div>
       </nav>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-scroll="true">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <!-- </div>
         </div>
-        <div class="offcanvas-body">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <div class="cart-details">
+    </nav> -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-scroll="true">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <div class="cart-details">
+            <div class="cart-item">
+              <img src="../images/jhumka.webp" alt="" srcset="">
+              <span class="p-3">Jhumka</span>
+            </div>
+            <div class="cart-price">
+              <h5>₹ 200</h5>
+            </div>
+          </div>
+          </li>
+          <li class="list-group-item">
+            <div class="cart-details">
               <div class="cart-item">
-                <img src="../images/jhumka.webp" alt="" srcset="">
-                <span class="p-3">Jhumka</span>
+                <img src="../images/dream-catcher.jpg" alt="" srcset="">
+                <span class="p-3">Dream Catcher</span>
               </div>
               <div class="cart-price">
-                <h5>₹ 200</h5>
+                <h5>₹ 150</h5>
               </div>
             </div>
-            </li>
-            <li class="list-group-item">
-              <div class="cart-details">
-                <div class="cart-item">
-                  <img src="../images/dream-catcher.jpg" alt="" srcset="">
-                  <span class="p-3">Dream Catcher</span>
-                </div>
-                <div class="cart-price">
-                  <h5>₹ 150</h5>
-                </div>
+          </li>
+          <li class="list-group-item">
+            <div class="cart-details">
+              <div class="cart-item">
+                <img src="../images/handmade-basket.webp" alt="" srcset="">
+                <span class="p-3">Handmade Basket</span>
               </div>
-            </li>
-            <li class="list-group-item">
-              <div class="cart-details">
-                <div class="cart-item">
-                  <img src="../images/handmade-basket.webp" alt="" srcset="">
-                  <span class="p-3">Handmade Basket</span>
-                </div>
-                <div class="cart-price">
-                  <h5>₹ 250</h5>
-                </div>
+              <div class="cart-price">
+                <h5>₹ 250</h5>
               </div>
-            </li>
-          </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="offcanvas-footer bg-light"> 
+        <div class="cart-total">
+          <p>SubTotal:</p>
+          <h5>₹ 600</h5>
         </div>
-        <div class="offcanvas-footer bg-light"> 
-          <div class="cart-total">
-            <p>SubTotal:</p>
-            <h5>₹ 600</h5>
-          </div>
-          <div class="text-center">
-            <button type="button" class="btn btn-success mb-3">Checkout</button>
-          </div>
-      </div>
-      </div>
+        <div class="text-center">
+          <button type="button" class="btn btn-success mb-3">Checkout</button>
+        </div>
+    </div>
+    </div>
+
+
+      <!-- <div class="about-section">
+        <div class="about-img">
+          <img src="../images/sewing-machine-1507485.jpg" alt="handicraft">
+        </div>
+        <div class="about-text">
+          <p>
+            Discover a world of creativity and craftsmanship on our DIY and handicraft website. 
+            Our platform is a vibrant hub for artisans, makers, and creative enthusiasts alike. 
+            </p>
+            <p>
+              Whether you're a seasoned craftsman or a novice eager to explore your artistic side, 
+              our website offers a treasure trove of inspiration, tutorials, and resources to fuel your passion for handcrafted creations.
+            </p>
+            <p>
+              Join our welcoming community, share your 
+              projects, and embark on a journey of self-expression, ingenuity, and the joy of crafting.
+             Unleash your inner artist and transform everyday materials into beautiful, one-of-a-kind works of art with the 
+             guidance and support of our dedicated DIY and handicraft platform.
+            </p>
+        </div>
+
+      </div> -->
+      
+
+      <!-- <footer class="bg-light text-dark"> -->
+
+     
 
       <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary  rounded-2" tabindex="0">
         <div id="home" class="carousel slide" data-ride="carousel">
@@ -184,8 +219,180 @@
           </div>
   
         </div>
+        <div id="shop" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="../images/candles.webp" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Handmade Candles</h5>
+                        <p class="card-text">Personalize the ambiance and fragrance of your living spaces with handmade Candles.</p>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-secondary mb-3">Shop</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="../images/ceramics.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Ceramics & Pottery</h5>
+                        <p class="card-text">Allow for a deep connection with both the material and the creative process, explore Ceramics.</p>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-secondary mb-3">Shop</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="../images/crocheting.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Crocheting & Knitting</h5>
+                        <p class="card-text">Experience a rich history and offered wide range of creative possibilities with crochets.</p>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-secondary mb-3">Shop</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="../images/embroidery.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Traditional Handloom</h5>
+                        <p class="card-text">A captivating craft that exemplifies the intersection of art, culture, and craftsmanship.</p>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-secondary mb-3">Shop</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="../images/handmade-jewellery.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Handmade Jewelleries</h5>
+                        <p class="card-text">These handcrafted pieces that reflect the artistic vision and your personal styles.</p>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-secondary mb-3">Shop</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="../images/leather_bags.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Leather Bags</h5>
+                        <p class="card-text">A classic and timeless accessory that combines style, durability, and functionality.</p>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-secondary mb-3">Shop</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#shop" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#shop" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    
+        <div class="FAQ-section" id="faq">
+          <section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+            <div class="container">
+              <h2 class="FAQ-title">Frequently Asked Questions</h2>
+              <div class="accordion" id="accordion">
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="heading0">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                      What is शिल्पकला?
+                    </button>
+                  </h3>
+                  <div id="collapse0" class="accordion-collapse collapse" aria-labelledby="heading0" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                      <p>An online platform or website that showcases and sells handmade and artisanal products. It connects artisans and crafters with a global audience interested in unique, handmade goods. Our aim is to motivate and support small-scale businesses to stand still in the face of the storm.</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="heading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                      What types of products can I find here?
+                    </button>
+                  </h3>
+                  <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                      <p>शिल्पकला offers a wide range of products, including handmade jewelry, clothing, accessories, home decor, art, pottery, woodwork, candles, soaps, and much more. The variety of items is often based on the skills and creativity of the artisans.</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                      Are the products on here truly handmade?
+                    </button>
+                  </h3>
+                  <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                      <p>Yes, the products on शिल्पकला are typically handmade by artisans or crafters. Many platforms have strict guidelines to ensure that items are genuinely crafted by hand or in small, independent workshops.</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                      Can I request custom or personalized items here?
+                    </button>
+                  </h3>
+                  <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                      <p>Many artisans on this site offer custom or personalized orders. You can usually contact the artisan directly to discuss your specific requirements.</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="accordion-item">
+                  <h3 class="accordion-header" id="heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                      How do I support local artisans and small businesses on handcraft sites?
+                    </button>
+                  </h3>
+                  <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                      <p>You can filter your search to find products from local artisans in your area or those that offer fair trade or ethically sourced items. Supporting small, independent artisans helps sustain traditional crafts and local economies.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        </div>
+    
       </div>
-      <footer class="bg-light text-dark p-5">
+      <footer class="bg-light text-dark p-5" id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 col-sm-12">
