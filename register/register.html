@@ -73,7 +73,7 @@
         </div>
 
         <div class="col-md-7">
-          <form class="row g-3 needs-validation" novalidate>
+          <form class="row g-3 needs-validation" >
             <div class="col-md-6">
               <label for="firstName" class="form-label">First name</label>
               <input
@@ -82,7 +82,7 @@
                 id="firstName"
                 required
               />
-              <div id="feedback-name"></div>
+              <div id="feedback-firstname"></div>
             </div>
             <div class="col-md-6">
               <label for="lastName" class="form-label">Last name</label>
@@ -93,15 +93,15 @@
               <div class="mb-3">
                 <label class="form-label d-block">Sex</label>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="male" type="radio" name="sex" />
+                    <input class="form-check-input" id="male" type="radio" name="sex" required />
                     <label class="form-check-label" for="male">Male</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="female" type="radio" name="sex" />
+                    <input class="form-check-input" id="female" type="radio" name="sex" required/>
                     <label class="form-check-label" for="female">Female</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="other" type="radio" name="sex" />
+                    <input class="form-check-input" id="other" type="radio" name="sex" required/>
                     <label class="form-check-label" for="other">Other</label>
                 </div>
             </div>
@@ -109,7 +109,7 @@
             </div>
             <div class = "col-md-6"> 
               <label for="dob" class="form-label">Date Of Birth</label>   
-                 <input type = "date" name = "date" class="form-control">   
+                 <input type = "date" name = "date" class="form-control" id="dob" required>   
                  <div id="feedback-dob"></div>
             </div> 
             <div class="col-md-6">
@@ -140,16 +140,16 @@
               <div id="feedback-password"></div>
             </div>
             <div class="col-md-6">
-              <label for="confirmPassowrd" class="form-label"
+              <label for="confirmPassword" class="form-label"
                 >Confirm password</label
               >
               <input
                 type="password"
                 class="form-control"
-                id="confirmPassowrd"
+                id="confirmPassword"
                 required
               />
-              <div id="feedback"></div>
+              <div id="feedback-confirmPassword"></div>
             </div>
 
             <div class="col-12 text-center">
